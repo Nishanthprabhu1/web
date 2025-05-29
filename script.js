@@ -49,6 +49,6 @@ async function loadJewelryImages(type, containerId, apiUrl) {
   }
 }
 
-// Replace these with your actual Google Apps Script endpoint URLs
+// Updated Google Apps Script endpoint URLs
 loadJewelryImages('earring', 'earring-options', 'https://script.google.com/macros/s/AKfycbz-KFZzOux1rrkdK7uK221rqCRUpcJtFM-NvhKfFRKz5DkK6JTyZImS5de18BuO6JSN/exec?folder=1Ch_bA-qHKipI2Wtg_BbvDcQmP4pvYHAb');
 loadJewelryImages('necklace', 'necklace-options', 'https://script.google.com/macros/s/AKfycbz-KFZzOux1rrkdK7uK221rqCRUpcJtFM-NvhKfFRKz5DkK6JTyZImS5de18BuO6JSN/exec?folder=1ofYcZWdmwVk4_kjiW4VuiL1luldA_T_7');
