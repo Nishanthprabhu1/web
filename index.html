@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Virtual Jewelry Try-On</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.4/dist/aframe/mindar-face-aframe.prod.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="jewelry-buttons">
+      <div>
+        <button onclick="showEarring()">Earring</button>
+        <button onclick="showNecklace()">Necklace</button>
+      </div>
+      <div id="earring-options"></div>
+      <div id="necklace-options"></div>
+    </div>
+
+    <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-assets>
+        <img id="earring-img" src="" />
+        <img id="necklace-img" src="" />
+      </a-assets>
+
+      <a-camera active="true" position="0 0 0"></a-camera>
+
+      <a-entity mindar-face-target="anchorIndex: 0">
+        <a-image id="earring" src="" position="0.5 0.6 0" width="0.2" height="0.2" visible="false"></a-image>
+        <a-image id="necklace" src="" position="0 -0.6 0" width="1" height="0.3" visible="false"></a-image>
+      </a-entity>
+    </a-scene>
+
+    <script src="script.js"></script>
+  </body>
+</html>
